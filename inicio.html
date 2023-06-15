@@ -1,0 +1,197 @@
+<!Doctype HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="inicio.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="inicio.js"></script>
+</head>
+
+
+<body onload="iniciar()" onfocus="definir()">
+
+    <div id="mySidenav" class="sidenav">
+        <p class="logo"><span>D. </span>Paula </p>
+        <a href="inicio.html" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;Inicio</a>
+        <a href="pacientes.html" class="icon-a"><i class="fa fa-list icons"></i> &nbsp;&nbsp;Lista Pacientes</a>
+        <a href="medicos.html" class="icon-a"><i class="fa fa-users icons"></i> &nbsp;&nbsp;Médicos</a>
+        <a href="medicamentos.html" class="icon-a"><i class="fa fa-shopping-bag icons"></i> &nbsp;&nbsp;Medicamentos</a>
+        <a href="emergencia.html" class="icon-a"><i class="fa fa-hospital icons"></i> &nbsp;&nbsp;Emergência</a>
+        <a href="index.html" class="icon-a"><i class="fa fa-close"></i> &nbsp;&nbsp;Sair</a>
+
+
+    </div>
+    <div id="main">
+        <div class="head">
+            <div class="col-div-6">
+                <span style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0);" class="nav">&#9776; Lar Dona Paula</span>
+                <span style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0);" class="nav2">&#9776; Lar Dona Paula
+                    </span>
+            </div>
+
+
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="clearfix"></div>
+        <br />
+
+
+        <div class="col-div-3">
+            <div class="box">
+                <p>37<br /><span>Pacientes</span></p>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="60" fill="currentColor"
+                    class="bi bi-clipboard-heart" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M5 1.5A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm5 0a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Z" />
+                    <path
+                        d="M3 1.5h1v1H3a1 1 0 0 0-1 1V14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3.5a1 1 0 0 0-1-1h-1v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z" />
+                    <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.31 8 6.982Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+                <p>10<br /><span>Cuidadores</span></p>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="60" fill="currentColor"
+                    class="bi bi-person-heart" viewBox="0 0 16 16">
+                    <path
+                        d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+
+                <p id="hora"></p>
+
+
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="60" fill="currentColor"
+                    class="bi bi-stopwatch" viewBox="0 0 16 16">
+                    <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z" />
+                    <path
+                        d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z" />
+                </svg>
+            </div>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+                <p><a href="emergencia.html">Emergência</a></p>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="50" fill="currentColor"
+                    class="bi bi-hospital" viewBox="0 0 16 16">
+                    <path
+                        d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5Zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9h-.5Zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Z" />
+                    <path
+                        d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1V1Zm2 14h2v-3H7v3Zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3Zm0-14H6v1h4V1Zm2 7v7h3V8h-3Zm-8 7V8H1v7h3Z" />
+                </svg>
+            </div>
+        </div>
+
+
+
+        <div class="col-div-8">
+            <div class="box-8">
+                <div class="content-box">
+                    <p>Observar</p>
+                    <br />
+                    <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Sintoma</th>
+                            <th>Contato</th>
+                        </tr>
+                        <tr>
+                            <td>Aline</td>
+                            <td>Hipertensão Arterial</td>
+                            <td>
+                                <p class="tirar">
+                                    0000-0000
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Marcos</td>
+                            <td>Alzheimer</td>
+                            <td>
+                                <p class="tirar">
+                                    0000-0000
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Luciana</td>
+                            <td> Diabetes</td>
+                            <td>
+                                <p class="tirar">
+                                    0000-0000
+                                </p>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-div-4">
+            <div class="box-4">
+                <div class="content-box">
+                    <p>Ocupação de quartos</p>
+
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full">
+                                <div class="fill"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill"></div>
+                            </div>
+                            <div class="inside-circle"> 50% </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(".nav").click(function () {
+            $("#mySidenav").css('width', '70px');
+            $("#main").css('margin-left', '70px');
+            $(".logo").css('visibility', 'hidden');
+            $(".logo span").css('visibility', 'visible');
+            $(".logo span").css('margin-left', '-10px');
+            $(".icon-a").css('visibility', 'hidden');
+            $(".icons").css('visibility', 'visible');
+            $(".icons").css('margin-left', '-8px');
+            $(".nav").css('display', 'none');
+            $(".nav2").css('display', 'block');
+        });
+
+        $(".nav2").click(function () {
+            $("#mySidenav").css('width', '300px');
+            $("#main").css('margin-left', '300px');
+            $(".logo").css('visibility', 'visible');
+            $(".icon-a").css('visibility', 'visible');
+            $(".icons").css('visibility', 'visible');
+            $(".nav").css('display', 'block');
+            $(".nav2").css('display', 'none');
+        });
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,770 @@
+<!Doctype HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="medicamentos.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+</head>
+
+
+<body onload="iniciar()" onfocus="definir()">
+
+    <div id="mySidenav" class="sidenav">
+        <p class="logo"><span>D. </span>Paula </p>
+        <a href="inicio.html" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;Inicio</a>
+        <a href="pacientes.html" class="icon-a"><i class="fa fa-list icons"></i> &nbsp;&nbsp;Lista Pacientes</a>
+        <a href="medicos.html" class="icon-a"><i class="fa fa-users icons"></i> &nbsp;&nbsp;Médicos</a>
+        <a href="medicamentos.html" class="icon-a"><i class="fa fa-shopping-bag icons"></i> &nbsp;&nbsp;Medicamentos</a>
+        <a href="emergencia.html" class="icon-a"><i class="fa fa-hospital icons"></i> &nbsp;&nbsp;Emergência</a>
+        <a href="index.html" class="icon-a"><i class="fa fa-close"></i> &nbsp;&nbsp;Sair</a>
+
+
+    </div>
+    <div id="main">
+
+        <div class="head">
+            <div class="col-div-6"> <span style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0);"
+                    class="nav2">&#9776; </span>
+                <span style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0);" class="nav">&#9776; </span>
+
+            </div>
+
+            <h1>Medicamentos</h1>
+            <div id="wrap">
+                <input type="text" placeholder="Nome:">
+                <input type="text" placeholder="mg/ml">
+                <input type="text" placeholder="Tipo">
+
+
+
+            </div>
+            <div id="botoes">
+                <button>Cadastrar</button>
+            </div>
+            <div id="saida">
+                <table border="0" width="100%" height="5%">
+                    <tr>
+                        <td>
+                            Nome
+                        </td>
+                        <td>
+                            Mg/ML
+                        </td>
+                        <td>
+                            Tipo
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td> AAS </td>
+                        <td> 100mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Acetilcisteína </td>
+                        <td> 600mg </td>
+                        <td> Envelope </td>
+                    </tr>
+                    <tr>
+                        <td> Ácido Valproico </td>
+                        <td> 250mg/5ml </td>
+                        <td> xarope </td>
+                    </tr>
+                    <tr>
+                        <td> Acu Fresh </td>
+                        <td> </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Alendronato de Sódio </td>
+                        <td> 70mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Alendronato de Sódio </td>
+                        <td> 70mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Amitriptilina </td>
+                        <td> 25mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Amoxicilina + Clavulanato </td>
+                        <td> 500mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Anlodipina </td>
+                        <td> 5mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Aradois </td>
+                        <td> 25mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Atorvastatina </td>
+                        <td> 20mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Atrovent </td>
+                        <td> </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Atrovent </td>
+                        <td> </td>
+                        <td> Spray </td>
+                    </tr>
+                    <tr>
+                        <td> Azatiprina </td>
+                        <td> 50mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Azitromicina </td>
+                        <td> 500mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Baclofeno </td>
+                        <td> 10mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Bisoprolol </td>
+                        <td> 2,5mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Carbonato de Calcio </td>
+                        <td> 1250mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Carbonato de Cálcio </td>
+                        <td> 500mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Carbonato de Cálcio + colecalciferol </td>
+                        <td> 500+400 </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Cerumin </td>
+                        <td> </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Cianocobalamina (vitamina B12) </td>
+                        <td> 1000mcg </td>
+                        <td> Ampola </td>
+                    </tr>
+                    <tr>
+                        <td> Cianocobalamina (vitamina B12) </td>
+                        <td> 500mcg </td>
+                        <td> Ampola </td>
+                    </tr>
+                    <tr>
+                        <td> Clister Glicerinado </td>
+                        <td> 12,50% </td>
+                        <td> Frasco </td>
+                    </tr>
+                    <tr>
+                        <td> Clobetazol </td>
+                        <td> </td>
+                        <td> Creme </td>
+                    </tr>
+                    <tr>
+                        <td> Clonazepan </td>
+                        <td> 2,5mg/ml </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Clonazepan </td>
+                        <td> 0,5mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> clonazepan </td>
+                        <td> 2mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Clozapina </td>
+                        <td> 100mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Concor </td>
+                        <td> 1,25 </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Culturelle </td>
+                        <td> </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Daflon </td>
+                        <td> 1000mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Dapsona </td>
+                        <td> 100mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Darunavir </td>
+                        <td> 800mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Depakene </td>
+                        <td> 500mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> DePura </td>
+                        <td> 200UI </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Desvanlafaxina </td>
+                        <td> 50mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Diazepam </td>
+                        <td> 10mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Dimeticona </td>
+                        <td> 0 </td>
+                        <td> gota </td>
+                    </tr>
+                    <tr>
+                        <td> Dipirona </td>
+                        <td> </td>
+                        <td> Gotas </td>
+                    </tr>
+                    <tr>
+                        <td> Diprosone </td>
+                        <td> </td>
+                        <td> Pomada </td>
+                    </tr>
+                    <tr>
+                        <td> Domperidona </td>
+                        <td> 10mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Donepezila </td>
+                        <td> 10mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Donila </td>
+                        <td> 10mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Dorilen </td>
+                        <td> 500mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Duloxetina </td>
+                        <td> 30mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Enalapril </td>
+                        <td> 10mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Enalapril </td>
+                        <td> 5mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Escitalopram </td>
+                        <td> 10mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Escitalopram </td>
+                        <td> 20mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> escitalopram </td>
+                        <td> 20mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Escopolamina </td>
+                        <td> 10mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Espironolactona </td>
+                        <td> 25mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Fenobarbital </td>
+                        <td> 100mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Furosemida </td>
+                        <td> 40mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Gabapentina </td>
+                        <td> 400mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Glicose hipertônica </td>
+                        <td> 0 </td>
+                        <td> Ampola </td>
+                    </tr>
+                    <tr>
+                        <td> Glifage </td>
+                        <td> 500mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Hidroclorotiazida </td>
+                        <td> 25mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Insulina NPH </td>
+                        <td> 100 </td>
+                        <td> Ampola </td>
+                    </tr>
+                    <tr>
+                        <td> Insulina regular </td>
+                        <td> 0 </td>
+                        <td> Ampola </td>
+                    </tr>
+                    <tr>
+                        <td> Ipatrópio </td>
+                        <td> 20mg </td>
+                        <td> Inalador </td>
+                    </tr>
+                    <tr>
+                        <td> Lacrifilm </td>
+                        <td> </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Lactulona </td>
+                        <td> </td>
+                        <td> xarope </td>
+                    </tr>
+                    <tr>
+                        <td> Lactulose </td>
+                        <td> 667mg/ml </td>
+                        <td> xarope </td>
+                    </tr>
+                    <tr>
+                        <td> Lactulose </td>
+                        <td> 0 </td>
+                        <td> xarope </td>
+                    </tr>
+                    <tr>
+                        <td> Leflora </td>
+                        <td> </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Levodopa + Bensedazida </td>
+                        <td> 100mg + 25mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Levomepromazina </td>
+                        <td> 40mg/ml </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Levotiroxina </td>
+                        <td> 25mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Levotiroxina </td>
+                        <td> 50mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Losartana </td>
+                        <td> 50mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Losartana </td>
+                        <td> 25mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Macrodantina </td>
+                        <td> 100mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Memantina </td>
+                        <td> 10mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Memantina </td>
+                        <td> 10mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Metformina </td>
+                        <td> 850mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Metformina </td>
+                        <td> 500mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Metorpolol </td>
+                        <td> 25mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Mirtazapina </td>
+                        <td> 30mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Mirtazapina </td>
+                        <td> 15mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Muvinlax </td>
+                        <td> </td>
+                        <td> Sachê </td>
+                    </tr>
+                    <tr>
+                        <td> Neuleptil </td>
+                        <td> 10mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Nistatina </td>
+                        <td> 100.000UI/ml </td>
+                        <td> xarope </td>
+                    </tr>
+                    <tr>
+                        <td> Nortriptilina </td>
+                        <td> 25mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> ocupress </td>
+                        <td> </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Olanzapina </td>
+                        <td> 2,5mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Olanzapina </td>
+                        <td> 5mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Omeprazol </td>
+                        <td> 20mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Ondansetrona </td>
+                        <td> 8mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Ondansetrona </td>
+                        <td> 4mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Optive </td>
+                        <td> </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Ossotrat-D </td>
+                        <td> </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Oxigênio </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td> Pantopazol </td>
+                        <td> 40mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Paracetamol </td>
+                        <td> 500mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Paracetamol + codeína </td>
+                        <td> 500mg + 7,5mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Plenigell </td>
+                        <td> 5mg/ml </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Pramipexol </td>
+                        <td> 0,125mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Prednisona </td>
+                        <td> 20mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Prolopa </td>
+                        <td> 200/50mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Propalopa </td>
+                        <td> 200/50mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Quetiapina </td>
+                        <td> 25mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Razapina </td>
+                        <td> 45mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Risperidona </td>
+                        <td> 1mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Ritonavir </td>
+                        <td> 100mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Rivaroxabana </td>
+                        <td> 15mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Rosuvastatina </td>
+                        <td> 20mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Rubranova </td>
+                        <td> 1000mcg </td>
+                        <td> Ampola </td>
+                    </tr>
+                    <tr>
+                        <td> Saflutan </td>
+                        <td> </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Salbutamol </td>
+                        <td> 100mg </td>
+                        <td> Inalador </td>
+                    </tr>
+                    <tr>
+                        <td> salmeterol + fluticasona </td>
+                        <td> 25/125 mcg </td>
+                        <td> Inalador </td>
+                    </tr>
+                    <tr>
+                        <td> Seretide </td>
+                        <td> 25/125mcg </td>
+                        <td> Inalador </td>
+                    </tr>
+                    <tr>
+                        <td> Sertralina </td>
+                        <td> 50mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Sertralina </td>
+                        <td> 25mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Sinvastatina </td>
+                        <td> 40mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Sinvastatina </td>
+                        <td> 20mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Sinvastina </td>
+                        <td> 20mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Soro Fisiológico </td>
+                        <td> 500ml </td>
+                        <td> Garrafa </td>
+                    </tr>
+                    <tr>
+                        <td> Sulfato ferroso </td>
+                        <td> 40mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Sulfato ferroso </td>
+                        <td> 125mg/ml </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Supositório de Glicerina </td>
+                        <td> </td>
+                        <td> Supositório </td>
+                    </tr>
+                    <tr>
+                        <td> Systane Colírio </td>
+                        <td> 0 </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Timodol </td>
+                        <td> 0,50% </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Tramadol </td>
+                        <td> 100mg/ml </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Travatan </td>
+                        <td> </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Trazodona </td>
+                        <td> 100mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Trazodona </td>
+                        <td> 50mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Valproato de Sódio </td>
+                        <td> 50mg/ml </td>
+                        <td> xarope </td>
+                    </tr>
+                    <tr>
+                        <td> Valproato de Sódio </td>
+                        <td> 250mg/5ml </td>
+                        <td> xarope </td>
+                    </tr>
+                    <tr>
+                        <td> Vanisto </td>
+                        <td> 62,5 </td>
+                        <td> Inalador </td>
+                    </tr>
+                    <tr>
+                        <td> Venlafaxina </td>
+                        <td> 150mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+                    <tr>
+                        <td> Vitamina D </td>
+                        <td> 200UI </td>
+                        <td> Gota </td>
+                    </tr>
+                    <tr>
+                        <td> Zidovudina/Lamivudina </td>
+                        <td> 300/150mg </td>
+                        <td> Comprimido </td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(".nav").click(function () {
+                $("#mySidenav").css('width', '70px');
+                $("#main").css('margin-left', '70px');
+                $(".logo").css('visibility', 'hidden');
+                $(".logo span").css('visibility', 'visible');
+                $(".logo span").css('margin-left', '-10px');
+                $(".icon-a").css('visibility', 'hidden');
+                $(".icons").css('visibility', 'visible');
+                $(".icons").css('margin-left', '-8px');
+                $(".nav").css('display', 'none');
+                $(".nav2").css('display', 'block');
+            });
+
+            $(".nav2").click(function () {
+                $("#mySidenav").css('width', '300px');
+                $("#main").css('margin-left', '300px');
+                $(".logo").css('visibility', 'visible');
+                $(".icon-a").css('visibility', 'visible');
+                $(".icons").css('visibility', 'visible');
+                $(".nav").css('display', 'block');
+                $(".nav2").css('display', 'none');
+            });
+        </script>
+        <script src="medicamentos.js"></script>
+
+</body>
+
+
+</html>

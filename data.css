@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(131, 220, 255, 0.29);
+    overflow: hidden;
+    font-family: system-ui;
+    font-family: 'Poppins';
+}
+
+.clearfix {
+    clear: both;
+}
+
+.logo {
+    margin: 0px;
+    margin-left: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.logo span {
+    color: #000000;
+}
+
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(253, 147, 108, 0.874);
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+    box-shadow: 1px 0px 1.2px 0px #e3e3e3;
+}
+
+.sidenav a {
+    padding: 15px 8px 15px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: rgba(243, 127, 85, 0.874);
+    color: black;
+
+    transition: .3s;
+}
+
+.sidenav {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 300px;
+}
+
+.head {
+    padding: 20px;
+}
+
+.col-div-3 {
+    width: 25%;
+    float: left;
+}
+
+.patientDetails {
+    margin-bottom: 1rem;
+    color: rgb(184 191 234);
+}
+
+.input_div_room_page input {
+    width: 50%;
+}
+
+.btn {
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: rgba(253, 147, 108, 0.874);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    width: 20%;
+}
+
+#output {
+    padding: 10px;
+    width: 80%;
+    background: rgba(253, 147, 108, 0.874);
+    border-radius: 15px;
+}

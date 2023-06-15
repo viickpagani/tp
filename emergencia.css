@@ -1,0 +1,134 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(131, 220, 255, 0.29);
+  overflow: hidden;
+  font-family: system-ui;
+  font-family: 'Poppins';
+}
+
+.clearfix {
+  clear: both;
+}
+
+.logo {
+  margin: 0px;
+  margin-left: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.logo span {
+  color: #000000;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(253, 147, 108, 0.874);
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  box-shadow: 1px 0px 1.2px 0px #e3e3e3;
+}
+
+.sidenav a {
+  padding: 15px 8px 15px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: rgba(243, 127, 85, 0.874);
+  color: black;
+
+  transition: .3s;
+}
+
+.sidenav {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 300px;
+}
+
+.head {
+  padding: 20px;
+}
+
+.col-div-3 {
+  width: 25%;
+  float: left;
+}
+
+.box {
+  width: 95%;
+  height: 100px;
+
+  margin-left: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0px 0px 36px -3px #00000026;
+  margin-bottom: 30px;
+}
+
+.box p {
+  font-size: 60px;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  line-height: 30px;
+  padding-left: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.box p span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #818181;
+}
+
+.icon {
+  font-size: 40px !important;
+  float: right;
+  margin-top: 20px;
+  color: rgb(184 191 234);
+  padding-right: 10px;
+}
+
+.box a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.box a:hover {
+  text-decoration: none;
+  color: rgba(243, 127, 85, 0.874);
+  font-size: 30px;
+}
+
+.patientDetails h1 {
+  margin-bottom: 1rem;
+  color: rgb(184 191 234);
+}
+
+.clearfix {
+  clear: both;
+}

@@ -1,0 +1,233 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(131, 220, 255, 0.29);
+
+  font-family: system-ui;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.logo {
+  margin: 0px;
+  margin-left: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.logo span {
+  color: #000000;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(253, 147, 108, 0.874);
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  box-shadow: 1px 0px 1.2px 0px #e3e3e3;
+}
+
+.sidenav a {
+  padding: 15px 8px 15px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: rgba(243, 127, 85, 0.874);
+  color: black;
+
+  transition: .3s;
+}
+
+.sidenav {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 300px;
+}
+
+.head {
+  padding: 20px;
+}
+
+.col-div-3 {
+  width: 50%;
+  float: left;
+}
+
+.box {
+  width: 95%;
+  height: 350px;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0px 0px 36px -3px #00000026;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.perfil {
+  width: 100px;
+}
+
+.patientDetails h1 {
+  margin-bottom: 1rem;
+  color: rgb(184 191 234);
+}
+
+.patientBox {
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.app {
+  margin-top: 10px;
+  width: 100%;
+}
+
+@media (max-width:768px) {
+  .app {
+    width: 90%;
+  }
+}
+
+.app h1 {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: .5rem .5rem 0 0;
+  background-color: #de3f53;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.app form {
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.app form input {
+  border: 1px solid;
+  background-color: #ffffff;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  width: 90%;
+}
+
+.app form button {
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: rgba(253, 147, 108, 0.874);
+  font-size: 25px;
+  font-weight: 600;
+  height: 42px;
+  width: 10%;
+}
+
+.app ul {
+  list-style: none;
+  color: #e0e0e0;
+  padding: 0;
+}
+
+.app ul li {
+  padding: 10px;
+  background-color: rgba(131, 220, 255, 0.29);
+  border-bottom: 1px solid #000000;
+}
+
+.check {
+  width: 0.8em;
+  height: 0.8em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+  -webkit-appearance: none;
+}
+
+.check:checked {
+  background-color: #00ff0d;
+
+}
+
+.task {
+  font-size: 18px;
+  padding: 0 10px;
+  width: fit-content;
+  background: transparent;
+  border: none;
+  color: #000000;
+}
+
+.task:focus {
+  outline: none;
+}
+
+.app ul li i {
+  float: right;
+  cursor: pointer;
+  color: black;
+}
+
+.app ul li i:hover {
+  color: rgb(255, 82, 82);
+}
+
+.completed {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: line-through;
+}
+
+.form-group button {
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: rgba(253, 147, 108, 0.874);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px;
+  width: 10%;
+}
+
+.form-group input {
+  border: 1px solid;
+  background-color: #ffffff;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  width: 80%;
+}
+
+.form-group label {
+  font-size: 20px;
+}

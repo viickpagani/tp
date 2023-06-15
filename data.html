@@ -1,0 +1,104 @@
+<!Doctype HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="data.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<script src="data.js"></script>
+</head>
+
+
+<body onload="iniciar()" onfocus="definir()">
+
+	<div id="mySidenav" class="sidenav">
+		<p class="logo"><span>D. </span>Paula </p>
+		<a href="inicio.html" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;Inicio</a>
+		<a href="pacientes.html" class="icon-a"><i class="fa fa-list icons"></i> &nbsp;&nbsp;Lista Pacientes</a>
+		<a href="medicos.html" class="icon-a"><i class="fa fa-users icons"></i> &nbsp;&nbsp;Médicos</a>
+		<a href="medicamentos.html" class="icon-a"><i class="fa fa-shopping-bag icons"></i> &nbsp;&nbsp;Medicamentos</a>
+		<a href="emergencia.html" class="icon-a"><i class="fa fa-hospital icons"></i> &nbsp;&nbsp;Emergência</a>
+		<a href="index.html" class="icon-a"><i class="fa fa-close"></i> &nbsp;&nbsp;Sair</a>
+
+
+	</div>
+	<div id="main">
+		<div class="head">
+			<div class="col-div-6">
+				<span style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0);" class="nav">&#9776; </span>
+				<span style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0);" class="nav2">&#9776; </span>
+
+
+
+
+				<center>
+
+					<h3 id="user_name" class="color_white"></h3>
+
+					<div class="form-group input_div_room_page">
+						<div class="patientDetails">
+							<h1>Detalhes dos Pacientes</h1>
+						</div>
+						<h3 id="user_name" class="color_white"></h3>
+
+						<div class="form-group input_div_room_page">
+							<label>Adicionar data da avaliação</label>
+							<input type="text" id="room_name" class="form-control" placeholder="Data">
+						</div>
+
+						<button onclick="addRoom();" class="btn ">#Adicionar data</button>
+
+						<h3 class="color_white">#Datas</h3>
+
+						<div id="output"></div>
+
+				</center>
+
+
+			</div>
+
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(".nav").click(function () {
+				$("#mySidenav").css('width', '70px');
+				$("#main").css('margin-left', '70px');
+				$(".logo").css('visibility', 'hidden');
+				$(".logo span").css('visibility', 'visible');
+				$(".logo span").css('margin-left', '-10px');
+				$(".icon-a").css('visibility', 'hidden');
+				$(".icons").css('visibility', 'visible');
+				$(".icons").css('margin-left', '-8px');
+				$(".nav").css('display', 'none');
+				$(".nav2").css('display', 'block');
+			});
+
+			$(".nav2").click(function () {
+				$("#mySidenav").css('width', '300px');
+				$("#main").css('margin-left', '300px');
+				$(".logo").css('visibility', 'visible');
+				$(".icon-a").css('visibility', 'visible');
+				$(".icons").css('visibility', 'visible');
+				$(".nav").css('display', 'block');
+				$(".nav2").css('display', 'none');
+			});
+		</script>
+</body>
+
+
+</html>
